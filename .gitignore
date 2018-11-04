@@ -38,3 +38,7 @@ Thumbs.db
 # npm package
 #####################
 node_modules/
+
+# minio sys
+#####################
+.minio.sys/
