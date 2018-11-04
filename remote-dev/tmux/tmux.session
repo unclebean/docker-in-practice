@@ -1,0 +1,7 @@
+neww -n monitor
+split-window -v
+split-window -h
+neww -n build
+split-window -h
+split-window -v
+neww -n dev 'nvim'
