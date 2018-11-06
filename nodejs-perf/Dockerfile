@@ -26,6 +26,7 @@ ENV PATH $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 
 # install perf tool
 RUN apt install -y linux-tools-common linux-tools-generic linux-tools-`uname -r`
+RUN sh -c 'echo kernel.perf_event_paranoid=-1 > /etc/sysctl.d/local.conf'
 
 ENV NODE_ENV test
 RUN mkdir /code
